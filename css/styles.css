@@ -3,6 +3,7 @@
   --bottom-color: #2f303a;
   --letter-color: #757575;
   --tittle-color: #212121;
+  --company-color: #f5f4fa;
 }
 body {
   color: var(--tittle-color);
@@ -19,6 +20,7 @@ li {
   line-height: 1.192;
   text-align: left;
   font-weight: bold;
+  font-size: 26px;
 }
 .menu {
   text-decoration: none;
@@ -28,10 +30,11 @@ li {
   text-align: left;
   color: var(--tittle-color);
 }
-.menu:visited {
-  color: var(--tittle-color);
-}
+
 .menu:active {
+  color: var(--brand-color);
+}
+.menu:hover {
   color: var(--brand-color);
 }
 .contact {
@@ -48,6 +51,9 @@ li {
 .contact:active {
   color: var(--brand-color);
 }
+.contact:hover {
+  color: var(--brand-color);
+}
 .tittle {
   color: white;
   background-color: var(--bottom-color);
@@ -62,13 +68,18 @@ li {
   letter-spacing: 0.06em;
   font-weight: bold;
   line-height: 1.875;
+  border: none;
+  border-radius: 4px;
+  font-family: roboto, sans-serif;
 }
-
+.init {
+  background-color: var(--brand-color);
+  color: white;
+}
 .button:hover {
   color: white;
   background-color: var(--brand-color);
 }
-
 .description > li > h3 {
   text-align: left;
   letter-spacing: 0.03em;
@@ -81,6 +92,15 @@ li {
   letter-spacing: 0.03em;
   font-weight: regular;
   line-height: 1.714;
+}
+.description-work > h2 {
+  text-align: center;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+  line-height: 1.167;
+}
+.description-company {
+  background-color: var(--company-color);
 }
 .description-company > h2 {
   text-align: center;
@@ -105,13 +125,20 @@ li {
   background-color: var(--bottom-color);
   text-align: left;
 }
-.info > li > a {
-  color: white;
+.info {
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   text-align: left;
   letter-spacing: 0.03em;
   font-weight: regular;
   line-height: 1.714;
+  font-style: normal;
+}
+.info:hover {
+  color: var(--brand-color);
+}
+.address {
+  color: white;
 }
 .list > li > h3 {
   text-align: left;
@@ -125,4 +152,14 @@ li {
   letter-spacing: 0.03em;
   font-weight: regular;
   line-height: 1.875;
+}
+.list {
+  cursor: pointer;
+}
+.active {
+  color: var(--brand-color);
+}
+.option {
+  color: white;
+  background-color: var(--brand-color);
 }
