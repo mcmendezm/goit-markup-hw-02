@@ -153,7 +153,7 @@ li {
   font-weight: regular;
   line-height: 1.875;
 }
-.list {
+.list > li {
   cursor: pointer;
 }
 .active {
